@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Tabs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2 id="tabs-title">How our company can help you</h2>
+
+      <div class="tabs-container">
+        <ul aria-labelledby="tabs-title">
+          <li><a href="#advertising" id="tab-1">Advertising</a></li>
+          <li><a href="#social-media" id="tab-2">Socials</a></li>
+          <li><a href="#content-marketing" id="tab-3">Marketing</a></li>
+          <li><a href="#email" id="tab-4">Email</a></li>
+        </ul>
+
+        <div class="tabs__panels flow">
+          <div id="advertising" aria-labelledby="tab-1">
+            <p>
+              A marketing company can use targeted advertising to reach specific
+              audiences based on demographics, interests, and behaviors. This
+              can increase the effectiveness of advertising campaigns and
+              improve return on investment.
+            </p>
+          </div>
+
+          <div id="social-media" aria-labelledby="tab-2">
+            <p>
+              A marketing company can leverage social media platforms to engage
+              with customers and promote products or services. Social media can
+              also be used to gather customer feedback and insights to inform
+              future marketing strategies.
+            </p>
+          </div>
+
+          <div id="content-marketing" aria-labelledby="tab-3">
+            <p>
+              A marketing company can use content marketing to attract and
+              retain customers by creating and sharing valuable and relevant
+              content. This can help to establish the company as a thought
+              leader in its industry and build trust with customers.
+            </p>
+          </div>
+
+          <div id="email" aria-labelledby="tab-4">
+            <p>
+              A marketing company can use email campaigns to communicate with
+              customers and promote products or services. Email campaigns can be
+              personalized and targeted to specific audiences to increase their
+              effectiveness.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filler content -->
+    </div>
+  </body>
+</html>
