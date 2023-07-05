@@ -3,6 +3,9 @@ const tabsList = document.querySelector('ul');
 const tabButtons = document.querySelectorAll('a');
 const tabPanels = document.querySelectorAll('.tabs__panels > div');
 
+// set roles
+tabsList.setAttribute('role', 'tabList');
+
 // Hide the tabs content except the one you want to be visible
 tabButtons.forEach((tab, index) => {
   if (index === 0) {
@@ -13,9 +16,9 @@ tabButtons.forEach((tab, index) => {
 });
 
 // function to display the clicked tab, and hide the others
-const switchTab = clickedTab => {
+const switchTab = newTab => {
   // Get the href attribute from the clicked lins, and make that the active panel
-  const activePanelId = clickedTab.getAttribute('href');
+  const activePanelId = newTab.getAttribute('href');
   const activePanel = tabsContainer.querySelector(activePanelId);
 
   // go through all the panels and set them to hidden

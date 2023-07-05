@@ -66,3 +66,24 @@ body {
   width: min(50rem, 100% - 2rem);
   margin-inline: auto;
 }
+
+/* Tabs */
+[role='tabList'] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+[aria-selected='true'] {
+  text-decoration-thickness: 0.25em;
+  text-underline-offset: 0.5em;
+  color: orangered;
+}
+
+.tabs-container {
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  background: hsl(0 0% 50% / 0.1);
+}
